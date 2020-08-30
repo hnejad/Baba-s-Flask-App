@@ -1,7 +1,11 @@
-def queryData():
-    data = [['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth']]
-    return data
+import mysql.connector
+from queries.query1 import getQuery1
+from queries.query2 import getQuery2
 
-def getHeaders():
-    data = ['Column 1', 'Column 2', 'Column 3', 'Column 4']
-    return data
+query1 = getQuery1()
+query2 = getQuery2()
+
+queries = [query1, query2]
+
+def getQueries():
+    return queries

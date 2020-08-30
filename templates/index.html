@@ -6,17 +6,23 @@
 
 {% block content %}
 <div class="container">
-    <div class="cell">
-        {% for header in headers %}
-            <h1 class = 'header'>{{ header }}</h1>
-        {% endfor %}
-    </div>
-    {% for d in data %}
-        <div class = 'cell'>
-            {% for item in d %}
-                <h1>{{item}}</h1>
+    {% for q in queries %}
+        <div class="container">
+            <p class = 'description'>{{ q['description'] }}</p>
+            <div class="cell">
+                {% for header in q['headers'] %}
+                    <h1 class = 'header'>{{ header }}</h1>
+                {% endfor %}
+            </div>
+            {% for d in q['data'] %}
+                <div class = 'cell'>
+                    {% for item in d %}
+                        <h1>{{item}}</h1>
+                    {% endfor %}
+                </div>
             {% endfor %}
         </div>
     {% endfor %}
+
 </div>
 {% endblock %}

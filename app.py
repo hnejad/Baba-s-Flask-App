@@ -1,13 +1,12 @@
 from flask import Flask, render_template
-from queryData import queryData, getHeaders
+from queryData import getQueries
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    data = queryData()
-    headers = getHeaders()
-    return render_template("index.html",data=data, headers=headers)
+    queries = getQueries()
+    return render_template("index.html",queries=queries)
 
 if __name__ == "__main__":
     app.run(debug=1)
