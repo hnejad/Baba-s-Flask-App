@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% for d in data %}
+        <div class = 'cell'>
+            {% for item in d %}
+                <h1>{{item}}</h1>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
