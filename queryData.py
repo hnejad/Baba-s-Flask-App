@@ -1,0 +1,3 @@
+def queryData():
+    data = [['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth'],['first','second','third','fourth']]
+    return data
