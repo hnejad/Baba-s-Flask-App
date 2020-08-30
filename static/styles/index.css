@@ -13,4 +13,10 @@
 
 .cell h1{
     font-weight: 100;
+    text-align: center;
+}
+
+.header{
+    font-weight: 400;
+    text-align: center;
 }
