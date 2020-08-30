@@ -6,6 +6,11 @@
 
 {% block content %}
 <div class="container">
+    <div class="cell">
+        {% for header in headers %}
+            <h1 class = 'header'>{{ header }}</h1>
+        {% endfor %}
+    </div>
     {% for d in data %}
         <div class = 'cell'>
             {% for item in d %}
