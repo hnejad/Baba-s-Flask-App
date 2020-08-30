@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.cell{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cell h1{
+    font-weight: 100;
+}
